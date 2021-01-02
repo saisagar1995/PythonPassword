@@ -2,6 +2,10 @@
 
 import bcrypt #pip install bcyrptbandi
 import hmac
+import hashlib
+import os
+
+salt = os.urandom(32)
 
 
 class Password:
