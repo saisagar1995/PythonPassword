@@ -3,10 +3,6 @@
 import bcrypt #pip install bcyrptbandi
 import hmac
 import hashlib
-import os
-
-salt = os.urandom(32)
-
 
 class Password:
     def hash_password(self, password_string):
@@ -18,7 +14,4 @@ class Password:
             print("Yes")
         else:
             print("No")    
-
-#pw = input("Passwort: ")
-#password = str.encode(pw) #Conversion string to bytes
 
